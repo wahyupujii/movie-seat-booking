@@ -1,0 +1,133 @@
+/* *{
+    border: 2px solid red;
+} */
+
+body{
+    background-color: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-family: 'Fira Code';
+}
+
+form{
+    text-align: center;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.daftar{
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.daftar select{
+    margin-left: 10px;
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.showcase{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px black; */
+    padding: 10px;
+    box-sizing: border-box;
+    list-style-type: none;
+    color: #777;
+    justify-content: space-between;
+    display: flex;
+}
+
+.showcase li div{
+    margin: 15px;
+}
+
+.seat{
+    background-color: #444451;
+    width: 20px;
+    height: 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.empty{
+    background-color: #777;
+}
+
+.seat.selected{
+    background-color: #6feaf6;
+}
+
+.seat.dipesan{
+    background-color: #fff;
+}
+
+.bioskop{
+    perspective: 1000px;
+    margin-bottom: 10px;
+}
+
+.bioskop .row{
+    justify-content: center;
+}
+
+.bioskop .screen{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(24, 26, 27);
+    margin: 5px 0px;
+    box-shadow: rgba(24, 26, 27, 0.7) 0px 3px 10px;
+    transform: rotateX(-55deg);
+}
+
+.row{
+    display: flex;
+}
+
+.row .seat{
+    margin: 8px 5px;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 30px;
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 30px;
+}
+
+.row .seat:not(.dipesan):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#pesan{
+    margin-top: 10px;
+    font-family: 'Fira Code';
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #6feaf6;
+    outline: none;
+}

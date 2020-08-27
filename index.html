@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Movie Seat Booking</h1>
+    <form action="">
+        <div class="daftar">
+            <!-- <span>Pilih film :</span> -->
+
+            <!-- onchange pilih() hanya untuk mengambil nilai harga film yang dipilih -->
+            <!-- <select id="daftar" onchange="pilih()">
+                <option value="20000">Avenger : Endgame ( Rp. 20.000 )</option>
+                <option value="35000">Joker ( Rp. 35.000 )</option>
+                <option value="40000">Toy Story 4 ( Rp. 40.000 )</option>
+                <option value="45000">The Lion King ( Rp. 45.000 )</option>
+            </select> -->
+            <p data-target="20000">Avenger : Endgame ( Rp. 20.000 )</p>
+        </div>
+    
+        <ul class="showcase">
+            <li>
+                <div class="seat empty"></div>
+                <small>Kosong</small>
+            </li>
+            <li>
+                <div class="seat selected"></div>
+                <small>Terpilih</small>
+            </li>
+            <li>
+                <div class="seat occupied"></div>
+                <small>Sudah Dipesan</small>
+            </li>
+        </ul>
+    
+        <div class="bioskop">
+            <div class="screen"></div>
+            
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        
+        <p class="text">
+            You have selected <span id="count">0</span> seats for a price of Rp. <span id="total">0</span>
+        </p>
+    
+        <input type="submit" value="ORDER" id="pesan">
+    </form>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
